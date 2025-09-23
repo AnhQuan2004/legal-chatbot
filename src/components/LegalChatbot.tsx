@@ -132,10 +132,15 @@ const LegalChatbot = () => {
     // IMPORTANT: This is a client-side implementation for demonstration purposes.
     // In a production environment, the API key should be kept secret on a backend server.
     try {
+      const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
+      if (!apiKey) {
+        throw new Error("VITE_OPENROUTER_API_KEY is not set in the environment variables.");
+      }
+
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": `Bearer ${apiKey}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
