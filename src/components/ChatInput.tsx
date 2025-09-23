@@ -50,7 +50,7 @@ const ChatInput = ({
         <form onSubmit={handleSubmit} className="relative">
           <div className={cn(
             "relative flex items-end gap-3 p-3 bg-card border rounded-2xl shadow-card transition-all duration-300",
-            isFocused && "ring-2 ring-accent/50 border-accent/30 chat-input-focus"
+            isFocused && "ring-2 ring-accent/50 border-accent/30"
           )}>
             {/* Attachment Button */}
             <Button
@@ -92,10 +92,7 @@ const ChatInput = ({
               type="submit"
               size="sm"
               disabled={!message.trim() || isLoading}
-              className={cn(
-                "flex-shrink-0 gradient-legal shadow-legal transition-all duration-300 hover:shadow-lg",
-                message.trim() && !isLoading && "animate-pulse-glow"
-              )}
+              className="flex-shrink-0 gradient-legal shadow-legal transition-all duration-300 hover:shadow-lg"
             >
               <Send className="w-4 h-4" />
             </Button>
