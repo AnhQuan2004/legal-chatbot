@@ -34,7 +34,7 @@ const ChatHeader = ({ onToggleSidebar }: ChatHeaderProps) => {
               </h1>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Hỗ trợ tư vấn luật và thông tin pháp lý tại Việt Nam
+              Sản phẩm này là của đề tài QG.24.80
             </p>
           </div>
           
