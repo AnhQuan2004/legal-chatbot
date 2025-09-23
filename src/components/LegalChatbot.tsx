@@ -147,7 +147,10 @@ const LegalChatbot = () => {
           "model": "qwen/qwen-turbo",
           "messages": [
             { "role": "system", "content": "You are a helpful Vietnamese legal assistant. Provide clear, concise, and accurate information about Vietnamese law. Always respond in Vietnamese." },
-            { "role": "user", "content": messageText }
+            ...updatedMessages.map(msg => ({
+              role: msg.isUser ? "user" : "assistant",
+              content: msg.text
+            }))
           ]
         })
       });
