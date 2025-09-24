@@ -1,5 +1,4 @@
 import { Scale, MessageCircle, Sparkles, Menu, User } from "lucide-react";
-import legalHero from "@/assets/legal-hero.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -17,7 +16,7 @@ const ChatHeader = ({ onToggleSidebar }: ChatHeaderProps) => {
           </Button>
           <div className="relative">
             <img 
-              src={legalHero} 
+              src="/icon.png" 
               alt="Legal Assistant" 
               className="w-16 h-16 rounded-full object-cover border-2 border-accent shadow-chat"
             />
@@ -34,7 +33,7 @@ const ChatHeader = ({ onToggleSidebar }: ChatHeaderProps) => {
               </h1>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Sản phẩm này là của đề tài QG.24.80
+              Hỗ trợ tư vấn luật và thông tin pháp lý tại Việt Nam  (Đề tài QG.24.80)
             </p>
           </div>
           
