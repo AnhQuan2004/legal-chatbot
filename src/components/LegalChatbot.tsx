@@ -193,14 +193,14 @@ const LegalChatbot = () => {
   };
 
   return (
-    <div className="flex h-screen bg-chat-background">
-      {isSidebarOpen && (
+    <div className="flex h-screen bg-white">
+      <div className={isSidebarOpen ? "block" : "hidden"}>
         <ChatSidebar 
           chatHistory={chatHistory.map(c => ({ id: c.id, title: c.title, timestamp: c.timestamp }))}
           onNewChat={handleNewChat}
           onSelectChat={handleSelectChat}
         />
-      )}
+      </div>
       <div className="flex flex-col flex-1">
         <ChatHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
         
