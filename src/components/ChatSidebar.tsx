@@ -17,7 +17,7 @@ interface ChatSidebarProps {
 
 const ChatSidebar = ({ chatHistory, onNewChat, onSelectChat }: ChatSidebarProps) => {
   return (
-    <div className="w-64 bg-background border-r border-border flex flex-col h-full">
+    <div className="w-64 bg-white border-r border-border flex flex-col h-full">
       <div className="p-4 border-b border-border">
         <Button onClick={onNewChat} className="w-full">
           <PlusCircle className="mr-2 h-4 w-4" />

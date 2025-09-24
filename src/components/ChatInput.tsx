@@ -45,7 +45,7 @@ const ChatInput = ({
   }, [message]);
 
   return (
-    <div className="border-t border-border bg-background">
+    <div className="border-t border-border bg-white">
       <div className="container mx-auto p-4">
         <form onSubmit={handleSubmit} className="relative">
           <div className={cn(
@@ -92,7 +92,7 @@ const ChatInput = ({
               type="submit"
               size="sm"
               disabled={!message.trim() || isLoading}
-              className="flex-shrink-0 gradient-legal shadow-legal transition-all duration-300 hover:shadow-lg"
+              className="flex-shrink-0 gradient-accent shadow-legal transition-all duration-300 hover:shadow-lg"
             >
               <Send className="w-4 h-4" />
             </Button>

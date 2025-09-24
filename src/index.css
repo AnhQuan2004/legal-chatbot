@@ -31,10 +31,10 @@
     --muted: 217 33% 97%;
     --muted-foreground: 215 16% 47%;
 
-    /* Gold Legal Accent */
-    --accent: 45 93% 47%; /* Professional gold */
+    /* Legal Accent - Changed from gold to blue */
+    --accent: 217 70% 40%; /* Professional blue */
     --accent-foreground: 0 0% 100%;
-    --accent-muted: 45 93% 95%;
+    --accent-muted: 217 70% 95%;
 
     /* Status Colors */
     --destructive: 0 84% 60%;
@@ -57,7 +57,7 @@
 
     /* Gradients */
     --gradient-legal: linear-gradient(135deg, hsl(217 91% 20%), hsl(217 91% 30%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 93% 47%), hsl(45 93% 57%));
+    --gradient-accent: linear-gradient(135deg, hsl(217 70% 40%), hsl(217 70% 50%));
     --gradient-subtle: linear-gradient(180deg, hsl(217 33% 99%), hsl(217 33% 97%));
 
     /* Shadows */
@@ -195,8 +195,8 @@
     background: var(--gradient-legal);
   }
 
-  .gradient-gold {
-    background: var(--gradient-gold);
+  .gradient-accent {
+    background: var(--gradient-accent);
   }
 
   .gradient-subtle {
